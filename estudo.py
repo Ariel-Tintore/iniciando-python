@@ -31,3 +31,27 @@ y = 10
 z = "42"
 
 not (((x * y == z) and not (x < y)) or y % 2 == 0)
+
+# Fazendo uma média de notas
+
+def ler_nota(leia_nota):
+    # Solicita a nota e substitui vírgula por ponto
+    nota = input(leia_nota).replace(',', '.')
+    return float(nota)
+
+media1 = ler_nota("Qual foi a primeira nota? ")
+media2 = ler_nota("Qual foi a segunda nota? ")
+media3 = ler_nota("Qual foi a terceira nota? ")
+media4 = ler_nota("Qual foi a quarta nota? ")
+
+# Calcula a média
+media_final = (media1 + media2 + media3 + media4) / 4
+
+# Verifica se o aluno foi aprovado ou reprovado
+if media_final >= 7.0:
+    print("\nAprovado")
+else:
+    print("\nReprovado")
+
+# Exibe a média final
+print("\nSua média final é: ", media_final)
