@@ -1,4 +1,4 @@
-# Banco de dados de usuários e senhas (substitua por um banco de dados real em um sistema real)
+# Banco de dados de usuários e senhas
 usuarios = []
 senhas = []
 
