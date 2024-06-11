@@ -4,12 +4,12 @@ senhas = []
 
 def criar_conta():
     usuario = input("Digite o nome de usuário: ")
-    senha = input("Digite a senha desejada: ")
+    senha = input("Crie uma senha: ")
 
     # Armazenando o usuário e senha na lista
     usuarios.append(usuario)
     senhas.append(senha)
-    print("Conta criada com sucesso!")
+    print("\nConta criada com sucesso!")
 
 def login():
     usuario = input("Digite seu nome de usuário: ")
@@ -19,7 +19,7 @@ def login():
     if usuario in usuarios and senha == senhas[usuarios.index(usuario)]:
         print("Login bem-sucedido!")
     else:
-        print("Nome de usuário ou senha incorretos.")
+        print("\nNome de usuário ou senha incorretos.")
 
 # Programa principal
 while True:
