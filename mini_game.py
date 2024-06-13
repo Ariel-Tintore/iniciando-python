@@ -24,4 +24,4 @@ contagem_de_chances += 1
 if numero_do_usuario == numero_aleatorio and contagem_de_chances == 1:
         print("\nVocê é a mãe diná!! Acertou de primeira ")
         
-print("Você acertou, o número era:", numero_aleatorio, "Você precisou de ", contagem_de_chances, "tentativas. ")
+print(f"Você acertou, o número era: {numero_aleatorio} Você precisou de {contagem_de_chances}, tentativas. ")
